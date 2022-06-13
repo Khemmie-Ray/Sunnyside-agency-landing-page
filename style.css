@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+/* =======================================
+                 Typography
+======================================= */
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 7px;
+    margin: 0 0 1.5em;
+}
+
+h1, 
+.btn, h3,
+.content a, 
+h4, h5,
+.bold-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+li a {
+    color: white;
+    font-size: 1rem;
+}
+
+h1, .btn, 
+.content a, h5 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: white;
+    color: hsl(212, 27%, 19%);
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+
+h3 {
+    color:  hsl(212, 27%, 19%);
+    font-size: 2.5rem;
+}
+
+.cols p, .container p {
+    color: hsl(210, 4%, 67%);
+}
+
+.content a {
+    font-size: .9rem;
+    color: hsl(212, 27%, 19%);
+    border-bottom: 8px solid hsla(7, 99%, 70%, 0.33);
+    border-radius: 8px;
+}
+
+.content a:hover,
+.content a:focus {
+    border-bottom: 8px solid hsl(51, 100%, 49%);
+}
+
+.content p {
+    margin-bottom: 2.2em;
+}
+
+.mini-content p {
+    margin-bottom: 3em;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+.mini-content p, h4 {
+    color: hsl(167, 40%, 24%);
+}
+
+h5 {
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+    font-size: 1.3rem;
+    letter-spacing: 6px;
+    margin: 6em 0 3em;
+    font-weight: 700;
+}
+
+.box p {
+    margin-bottom: 4em;
+}
+
+.mini-text {
+    font-size: .8rem;
+}
+
+.photo-text, .photo-p {
+    color: hsl(198, 62%, 26%);
+}
+
+/* =======================================
+                 Layout
+======================================= */
+
+.top {
+    background-image: url(images/desktop/image-header.jpg);
+    padding: 1em 2em;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.title {
+   text-align: center;
+   position: absolute;
+   left: 50%;
+   top: 25%;
+   transform: translateX(-50%);
+}
+
+.nav-lists, 
+header, .col-1, 
+.col-2, .col-3,
+.container,
+.flex-Imgs, 
+.foot-lists, 
+footer, .flex1, 
+.flex2 {
+    display: flex;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+li:nth-child(2), 
+li:nth-child(3), 
+li:first-child {
+    margin-right: 1.5em;
+}
+
+li {
+    list-style: none;
+}
+
+.btn:hover,
+.btn:focus {
+    color: white;
+    background-color: turquoise;
+}
+
+.content {
+    align-self: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.col-1 img, .col-2 img {
+    width: 50%;
+}
+
+.col-2 .content {
+    order: 2;
+}
+
+.graphics-info, 
+.photo-info {
+    width: 50%;
+    position: relative;
+}
+
+.graphics-img, 
+.photo-img {
+    width: 100%;
+}
+
+.graphics-content, 
+.photo-content {
+    width: 54%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 58%;
+    transform: translateX(-50%);
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.graphics-content p {
+    color: hsl(167, 40%, 24%);
+}
+
+.photo-content p,
+.photo-content h4 {
+    color: hsl(198, 62%, 26%);
+}
+
+.box {
+    width: 32%;
+    text-align: center;
+}
+
+.container img {
+    border-radius: 50%;
+    width: 20%;
+    margin-bottom: 2em;
+}
+
+.flex-Imgs {
+    margin-top: 7em;
+}
+
+.flex1 img, .flex2 img {
+    width: 50%;
+}
+
+footer {
+    background-color: hsla(168, 34%, 41%, 0.483);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em;
+    min-height:  50vh;
+    text-align: center;
+}
+
+.foot-lists a {
+    color:  hsl(168, 34%, 41%);
+}
+
+.foot-lists a:hover,
+.foot-lists a:focus {
+    color: white;
+}
+
+.contact img {
+    margin-right: 1em;
+}
+
+.contact, .logo {
+    margin-top: 1em;
+}
+
+.mobile-header, 
+.mobile-graphics-img,
+.mobile-photo-img {
+    display: none;
+}
+
+/* =======================================
+                Media Query
+======================================= */
+@media (min-width: 601px) and (max-width: 920px) {
+    .title {
+        top: 28%;
+    }
+
+    .top {
+        min-height: 80vh;
+    }
+}
+
+
+@media (max-width: 600px) {
+.col-1, 
+.col-2, .col-3,
+.container, 
+footer {
+    flex-direction: column;
+}
+
+.top {
+    padding: 1em;
+}
+
+.mobile-header {
+    display: block; 
+}
+
+.topnav {
+    position: relative;
+}
+
+.topnav a:first-child {
+    display: block;
+    margin-bottom: 1em;
+    color: hsl(210, 4%, 67%);
+}
+
+.topnav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items  {
+    display: none;
+    background-color: white;
+    padding: 2em 0;
+    position: fixed;
+    left: 50%;
+    top: 4em;
+    transform: translateX(-50%);
+    background: hsl(46, 55%, 94%);
+    z-index: 10;
+    width: 90%;
+}
+
+.nav-items::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -1.2em;
+    border-top: .6em solid transparent;
+    border-bottom: .6em solid hsl(46, 55%, 94%);
+    border-left: .6em solid transparent;
+    border-right: .6em solid hsl(46, 55%, 94%);
+}
+
+.navItem {
+    background-color: hsl(51, 100%, 49%);
+    padding: 1em 3em 0;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    width: 30%;
+    margin: 0 6em;
+}
+
+#menu-Btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content {
+    width: 70%;
+    order: 2;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.flex-Imgs {
+    display: block;
+}
+
+.col-1 img, .col-2 img {
+    width: 100%;
+}
+
+.graphics-info,
+.photo-info {
+    width: 100%;
+}
+
+header {
+    display: none;
+}
+
+.box, 
+.graphics-content, 
+.photo-content {
+    width: 92%;
+}
+
+.flex-Imgs img {
+    width: 50%;
+}
+
+.graphics-img,
+.photo-img {
+    display: none;
+}
+
+.mobile-graphics-img,
+.mobile-photo-img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: .9rem;
+}
+
+.top {
+    min-height: 85vh;
+}
+}
+
