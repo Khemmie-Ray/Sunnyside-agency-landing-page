@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot.png)
+![Screenshot](./images/Screenshot.png)
 
 ### Links
 
@@ -57,9 +57,7 @@ I intend to focus on the styling of the hamburger menu because it took a while b
 
 ## Author
 
-- Website - [Khemmie Ray]()
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Khemmie Ray)
-- Twitter - [@yourusername](https://www.twitter.com/Haramide)
+- Frontend Mentor - [@Khemmie-Ray](https://www.frontendmentor.io/profile/Khemmie-Ray)
 
 ## Acknowledgments
 

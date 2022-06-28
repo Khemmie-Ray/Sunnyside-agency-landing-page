@@ -278,8 +278,15 @@ footer {
     .top {
         min-height: 80vh;
     }
-}
 
+    .graphics-content, 
+    .photo-content {
+        padding: .5em;
+        top: 30%;
+        width: 90%;
+        transform: translateX(-50%);
+}
+}
 
 @media (max-width: 600px) {
 .col-1, 
